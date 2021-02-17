@@ -7,8 +7,40 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.header,
+h1 {
+  display: inline;
+}
+
+.header,
+ul,
+li {
+  display: inline;
+}
+
 h1 {
   margin-left: 1rem;
+  font-size: 36px;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+li {
+  font-size: 24px;
+  margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li a:hover {
+  color: darkblue;
+  text-decoration: underline;
 }
 
 h3 {
@@ -23,6 +55,7 @@ h3 {
 .results {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .citybike {
