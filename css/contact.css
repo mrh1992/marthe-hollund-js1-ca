@@ -1,0 +1,39 @@
+.container-contact {
+  max-width: 1000px;
+  margin-left: 1rem;
+}
+
+form {
+  padding: 3em;
+  background: white;
+}
+
+input {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background: darkblue;
+  color: white;
+  border: none;
+  width: 200px;
+  padding: 1rem;
+  margin-top: 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 12px;
+  margin-top: 2px;
+}
