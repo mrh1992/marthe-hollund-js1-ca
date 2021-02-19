@@ -19,12 +19,12 @@ async function getBikes() {
                 break;
             }
 
-            resultsContainer.innerHTML += `<div class="citybike">
+            resultsContainer.innerHTML += `<div class="citybike"><a href="details.html?id=${bikes[i].id}">
                                             <h3>Company: ${bikes[i].company}</h3>
                                             <h4>Name: ${bikes[i].name}<h4>
                                             <p>City: ${bikes[i].location.city}</p>
                                             <p>Country: ${bikes[i].location.country}</p>
-                                        </div>`;
+                                        </a></div>`;
         }
 
     } catch (error) {
