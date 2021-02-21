@@ -8,16 +8,16 @@ const emailError = document.querySelector("#emailError");
 const address = document.querySelector("#address");
 const addressError = document.querySelector("#addressError");
 
-function validateForm(event) {
+function validateContactForm(event) {
     event.preventDefault();
 
-    if (checkLength(fullName.value, 0) === true) {
+    if (validateLength(fullName.value, 0) === true) {
         fullNameError.style.display = "none";
     } else {
         fullNameError.style.display = "block";
     }
 
-    if (checkLength(subject.value, 9) === true) {
+    if (validateLength(subject.value, 9) === true) {
         subjectError.style.display = "none";
     } else {
         subjectError.style.display = "block";
@@ -29,17 +29,17 @@ function validateForm(event) {
         emailError.style.display = "block";
     }
 
-    if (checkLength(address.value, 24) === true) {
+    if (validateLength(address.value, 24) === true) {
         addressError.style.display = "none";
     } else {
         addressError.style.display = "block";
     }
 }
 
-form.addEventListener("submit", validateForm);
+form.addEventListener("submit", validateContactForm);
 
-function checkLength(value, len) {
-    if (value.trim().length > len) {
+function validateLength(value, length) {
+    if (value.trim().length > length) {
         return true;
     } else {
         return false;
