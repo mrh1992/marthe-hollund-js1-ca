@@ -16,6 +16,18 @@ h3 {
   color: darkblue;
 }
 
+.back-nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  margin-left: 1rem;
+}
+
+.back-nav a:hover {
+  color: darkblue;
+  text-decoration: underline;
+}
+
 .success {
   border: 1px solid green;
   padding: 1rem;
